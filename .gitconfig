@@ -1,0 +1,7 @@
+[user]
+	name = pydog
+	email = wuxinxinggg@gmail.com
+[merge]
+	tool = vimdiff
+[core]
+	editor = vim
