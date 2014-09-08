@@ -50,4 +50,5 @@ git clone git@github.com:wuxinxinggg/goagent.git
 echo "setting git"
 ln -s $HOME/sysconfig/.gitconfig $HOME/.gitconfig
 
-
+echo "Setting tmux"
+cat $HOME/sysconfig/tmuxcolors-dark.conf >$HOME/.tmux.conf
