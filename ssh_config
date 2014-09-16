@@ -1,0 +1,11 @@
+# Default github user(pydogwu@qq.com)
+Host github.com
+HostName github.com
+User git
+IdentityFile /home/pydog/.ssh/id_rsa_pydog
+
+# second user(wuxinxinggg@gmail.com)
+Host github-second
+HostName github.com
+User git
+IdentityFile /home/pydog/.ssh/id_rsa_wxx
