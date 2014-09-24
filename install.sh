@@ -31,6 +31,11 @@ sudo apt-get install tig
 echo "install ctags"
 sudo apt-get install ctags
 
+#install ag
+sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
+git clone  https://github.com/ggreer/the_silver_searcher.git $HOME/ag
+cd $HOME/ag && ./build.sh && sudo make install
+
 #set dircolors
 echo "setting dircolors" 
 ln -s $HOME/sysconfig/.bash_aliases $HOME/.bash_aliases
