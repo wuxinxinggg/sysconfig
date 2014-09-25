@@ -36,6 +36,10 @@ sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
 git clone  https://github.com/ggreer/the_silver_searcher.git $HOME/ag
 cd $HOME/ag && ./build.sh && sudo make install
 
+#Install fonts for airline
+git clone git@github.com:Lokaltog/powerline-fonts.git $HOME/.fonts
+fc-cache -vf $HOME/.fonts/
+
 #set dircolors
 echo "setting dircolors" 
 ln -s $HOME/sysconfig/.bash_aliases $HOME/.bash_aliases
@@ -56,4 +60,4 @@ echo "setting git"
 ln -s $HOME/sysconfig/.gitconfig $HOME/.gitconfig
 
 echo "Setting tmux"
-cat $HOME/sysconfig/tmuxcolors-dark.conf >$HOME/.tmux.conf
+cat $HOME/sysconfig/tmuxline_tmux.conf >$HOME/.tmux.conf
