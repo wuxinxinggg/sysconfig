@@ -8,4 +8,4 @@ export TERM="screen-256color"
 alias tmux='tmux -2'
 
 #set arm cross compile
-export PATH="$HOME/sysconfig/arm-linux-gcc-4.3.2/usr/local/arm/4.3.2/bin:$PATH"
+export PATH="$HOME/sysconfig/arm-linux-gcc-4.3.2/usr/local/arm/4.3.2/bin:$HOME/local/bin:$PATH"

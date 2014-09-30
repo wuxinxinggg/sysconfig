@@ -31,6 +31,14 @@ sudo apt-get install tig
 echo "install ctags"
 sudo apt-get install ctags
 
+#install MIndex
+if [ -d $HOME/local/bin ];then
+    mkdir -p $HOME/local/bin
+fi
+
+chmod +x $HOME/sysconfig/make_index.sh 
+ln -s $HOME/sysconfig/make_index.sh $HOME/local/bin/MIndex
+
 #install ag
 sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
 git clone  https://github.com/ggreer/the_silver_searcher.git $HOME/ag
