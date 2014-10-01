@@ -46,6 +46,7 @@ cd $HOME/ag && ./build.sh && sudo make install
 
 #Install fonts for airline
 git clone git@github.com:Lokaltog/powerline-fonts.git $HOME/.fonts
+git clone git@github.com:liangfeng/consolas-font-for-airline.git $HOME/.fonts/consolas-font-for-airline
 fc-cache -vf $HOME/.fonts/
 
 #set dircolors
